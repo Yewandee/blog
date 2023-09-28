@@ -54,11 +54,11 @@ const Header = () => {
 
                                 </li>
 
-                                <li classNameName="nav-item">
+                                <li className="nav-item">
                                     <NavLink className="nav-link" to='/contact'>Contact Us</NavLink>
                                 </li>
 
-                                <li classNameName="nav-item">
+                                <li className="nav-item">
                                     <NavLink className="nav-link" to='/broker'>Brokers</NavLink>
                                 </li>
                                 <div className="switch">

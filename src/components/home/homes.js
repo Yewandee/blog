@@ -21,6 +21,7 @@ const Home = () => {
     return (
 
         <>
+        
             <Slider {...settings}>
                 {Hdata.map((value) => {
                     console.log("value", value)
@@ -49,7 +50,7 @@ const Home = () => {
 
             <Blog />
             <Contact />
-            <Footer />
+            
 
         </>
     )

@@ -7,6 +7,7 @@ const Blog = () => {
     return (
         <div>
             <div className="container-fluid py-5 my-5">
+                
                 <div className="row align-">
                     <div className="col-12 col-md-6">
                         <div className="about-img">

@@ -1,6 +1,6 @@
 import Header from './components/header/header';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { ThemeProvider } from "@mui/material";
+import { CssBaseline, ThemeProvider } from "@mui/material";
 import { createTheme } from "@mui/material/styles";
 import { useMemo } from "react";
 import { useSelector } from "react-redux";
@@ -20,6 +20,7 @@ function App() {
   return (
     <div className="App">
       <ThemeProvider theme={theme}>
+      <CssBaseline />
         <Router>
           <Header />
           <Routes>
