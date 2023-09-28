@@ -1,14 +1,15 @@
 import React from 'react'
 import Footer from '../footer/footer'
-
+import { useTheme } from "@mui/material";
 
 const Contact = () => {
+    const theme = useTheme()
     return (
         <div>
-            <div className="container-xxl py-5">
+            <div className="container-xxl py-5" style={{color: theme.palette.primary.dark}}>
                 
                 <div className="container">
-                    <div className="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style={{ maxWidth: '600px' }}>
+                    <div className="text-center mx-auto mb-5" data-wow-delay="0.1s" style={{ maxWidth: '600px', color: theme.palette.secondary.light }}>
                         <h4 className="section-title">Contact Us</h4>
                         <h1 className="display-5 mb-4">If You Have Any Query, Please Feel Free Contact Us</h1>
                     </div>

@@ -2,12 +2,15 @@ import React from "react"
 import { NavLink, } from 'react-router-dom';
 import '../footer/footer.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import { useTheme } from "@mui/material";
 
 const Footer = () => {
+    const theme = useTheme()
+    console.log(theme)
     return (
         <>
             <footer>
-                <div className='container m-5' style={{ backgroundColor: "#1a1a1a", color: "ffffff", }}>
+                <div className='container m-5' style={{ backgroundColor: "#1a1a1a", color:theme.palette.secondary.light }}>
                     <div className='row g-5'>
                         <div className='box col-lg-4 col-s-12'>
                             <h1>RAYSTORE</h1>
