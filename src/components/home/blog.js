@@ -18,7 +18,7 @@ const Blog = () => {
                         <h4 className="section-title">BLOG</h4>
                         <h2>Our Services</h2>
                         <ul>
-                            <li><NavLink className="nav-link" to='/contact'>Forex</NavLink></li>
+                            <li><NavLink className="nav-link" to='/blog/forex'>Forex</NavLink></li>
                             <li><NavLink className="nav-link" to='/contact'>Binary Options</NavLink></li>
                             <li><NavLink className="nav-link" to='/contact'>Economics</NavLink></li>
                         </ul>

@@ -10,6 +10,8 @@ import Blog from './components/home/blog';
 import Contact from './components/home/contact';
 import Broker from './components/home/broker';
 import Homes from './components/home/homes';
+import Forex from './components/blog/forex';
+import Home from './components/home/homes';
 
 function App() {
 
@@ -21,6 +23,7 @@ function App() {
     <div className="App">
       <ThemeProvider theme={theme}>
       <CssBaseline />
+      
         <Router>
           <Header />
           <Routes>
@@ -28,6 +31,7 @@ function App() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/broker" element={<Broker />} />
+            <Route path="/blog/forex" element={<Forex />} />
 
           </Routes>
         </Router>
