@@ -5,6 +5,7 @@ import "../home/home.css"
 import Footer from "../footer/footer"
 import Contact from "./contact"
 import Blog from "./blog"
+import Forex from "../blog/forex"
 
 
 
@@ -49,6 +50,7 @@ const Home = () => {
             </Slider>
 
             <Blog />
+            <Forex/>
             <Contact />
             
 
