@@ -10,7 +10,7 @@ const Footer = () => {
     return (
         <>
             <footer>
-                <div className='container m-5' style={{ backgroundColor: "#1a1a1a", color:theme.palette.secondary.light }}>
+                <div className='container' style={{ backgroundColor: "#1a1a1a", color:theme.palette.secondary.light }}>
                     <div className='row g-5'>
                         <div className='box col-lg-4 col-s-12'>
                             <h1>RAYSTORE</h1>
@@ -19,7 +19,7 @@ const Footer = () => {
                         </div>
 
                         <div className='box col-lg-4 col-s-12' style={{textAlign:"center"}}>
-                            <h2>Blog</h2>
+                            <h2>Blog Center</h2>
                             <ul>
                                 <li><NavLink className="nav-link" to=''>Forex</NavLink></li>
                                 <li><NavLink className="nav-link" to=''>Binary Options</NavLink></li>

@@ -50,7 +50,7 @@ const Home = () => {
             </Slider>
 
             <Blog />
-            <Forex/>
+            {/* <Forex/> */}
             <Contact />
             
 

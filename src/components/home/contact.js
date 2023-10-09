@@ -18,7 +18,7 @@ const Contact = () => {
                             <div className="d-flex flex-column justify-content-between h-100">
                                 <div className="bg-light d-flex align-items-center w-100 p-4 mb-4">
                                     <div className="d-flex flex-shrink-0 align-items-center justify-content-center bg-dark" style={{ width: "55px", height: "55px" }}>
-                                        <i className="fa fa-map-marker-alt text-primary"></i>
+                                        <i className="fa fa-map-marker-alt text-light"></i>
                                     </div>
                                     <div className="ms-4">
                                         <p className="mb-2">Address</p>
@@ -27,16 +27,17 @@ const Contact = () => {
                                 </div>
                                 <div className="bg-light d-flex align-items-center w-100 p-4 mb-4">
                                     <div className="d-flex flex-shrink-0 align-items-center justify-content-center bg-dark" style={{ width: "55px", height: "55px" }}>
-                                        <i className="fa fa-phone-alt text-primary" />
+                                        <i className="fa fa-phone-alt text-light"></i>
                                     </div>
                                     <div className="ms-4">
                                         <p className="mb-2">Call Us Now</p>
                                         <h3 className="mb-0">+234 909 047 4500</h3>
+                                        
                                     </div>
                                 </div>
                                 <div className="bg-light d-flex align-items-center w-100 p-4">
                                     <div className="d-flex flex-shrink-0 align-items-center justify-content-center bg-dark" style={{ width: "55px", height: "55px" }}>
-                                        <i className="fa fa-envelope-open text-primary"></i>
+                                        <i className="fa fa-envelope-open text-light"></i>
                                     </div>
                                     <div className="ms-4">
                                         <p className="mb-2">Mail Us Now</p>
@@ -83,7 +84,7 @@ const Contact = () => {
                 </div>
             </div>
 
-            <Footer />
+            {/* <Footer /> */}
         </div>
 
 

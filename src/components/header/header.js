@@ -1,9 +1,9 @@
 import React from 'react'
+import "../header/header.css"
 import { useState } from 'react';
 import { NavLink, } from 'react-router-dom';
 import { Navbar } from 'react-bootstrap';
 import { createContext } from "react";
-import ReactSwitch from "react-switch";
 import { useDispatch } from 'react-redux';
 import { useTheme } from '@mui/material/styles';
 import { setMode } from '../../redux/reducer';
@@ -16,7 +16,7 @@ const Header = () => {
     const dispatch = useDispatch()
 
     const theme = useTheme();
-   
+
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -24,21 +24,23 @@ const Header = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
-   
+
 
     return (
         <div>
 
-            <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark p-3">
-                <div className="container-fluid">
-                    <NavLink className="navbar-brand active" aria-current="page" to='./home'>BLOG</NavLink>
+            <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark p-3 d-flex justify-content-evenly  ">
+                <div className="container-fluid  ">
+                    <NavLink className="navbar-brand active" aria-current="page" to='/'>BLOG</NavLink>
 
 
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation" onClick={toggleMenu}>
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onClick={toggleMenu}>
                         <span className="navbar-toggler-icon"></span>
                     </button>
 
-                    <div className="collapse navbar-collapse" id="navbarNav">
+
+                    <div className="collapse  navbar-collapse" id="navbarNav">
                         <Navbar.Collapse className={isMenuOpen ? 'show' : ''}>
                             <ul className="navbar-nav me-auto  d-flex justify-content-md-evenly ">
 
@@ -47,9 +49,10 @@ const Header = () => {
                                         Blog
                                     </a>
                                     <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                        <li><a className="dropdown-item" href="#">Forex</a></li>
-                                        <li><a className="dropdown-item" href="#">Binary Options</a></li>
-                                        <li><a className="dropdown-item" href="#">Economics</a></li>
+                                    
+                                        <li><NavLink className="dropdown-item" to='/forex'>Forex</NavLink></li>
+                                        <li><NavLink className="dropdown-item" to='/Binary'>Binary Options</NavLink></li>
+                                        <li><NavLink className="dropdown-item" to='/Economics'>Economics</NavLink></li>
                                     </ul>
 
                                 </li>

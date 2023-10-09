@@ -8,10 +8,11 @@ import { themeSettings } from './theme';
 
 import Blog from './components/home/blog';
 import Contact from './components/home/contact';
-import Broker from './components/home/broker';
 import Homes from './components/home/homes';
 import Forex from './components/blog/forex';
-import Home from './components/home/homes';
+import Broker from './components/blog/broker';
+import Economics from './components/blog/economics';
+import Footer from './components/footer/footer';
 
 function App() {
 
@@ -25,15 +26,20 @@ function App() {
       <CssBaseline />
       
         <Router>
+          
           <Header />
+          
           <Routes>
-          <Route path="/home" element={<Homes/>} />
-            <Route path="/blog" element={<Blog />} />
+            <Route path="/" element={<Homes/>} />
+            {/* <Route path="/blog" element={<Blog />} /> */}
             <Route path="/contact" element={<Contact />} />
+            <Route path="/forex" element={<Forex />} />
             <Route path="/broker" element={<Broker />} />
-            <Route path="/blog/forex" element={<Forex />} />
-
+            <Route path="/economics" element={<Economics />} />
+            
           </Routes>
+
+          <Footer />
         </Router>
       </ThemeProvider>
 
