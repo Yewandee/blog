@@ -42,7 +42,7 @@ const Header = () => {
 
                     <div className="collapse  navbar-collapse" id="navbarNav">
                         <Navbar.Collapse className={isMenuOpen ? 'show' : ''}>
-                            <ul className="navbar-nav me-auto  d-flex justify-content-md-evenly ">
+                            <ul className="navbar-nav  d-flex justify-content-md-evenly ">
 
                                 <li className="nav-item dropdown">
                                     <a className="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">

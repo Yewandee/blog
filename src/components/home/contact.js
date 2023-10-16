@@ -6,7 +6,7 @@ const Contact = () => {
     const theme = useTheme()
     return (
         <div>
-            <div className="container-xxl py-5" style={{color: theme.palette.primary.dark}}>
+            <div className="container-xxl py-5 mt-5" style={{color: theme.palette.primary.dark}}>
                 
                 <div className="container">
                     <div className="text-center mx-auto mb-5" data-wow-delay="0.1s" style={{ maxWidth: '600px', color: theme.palette.secondary.light }}>
